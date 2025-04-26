@@ -5,98 +5,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio Website</title>
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap');
-
-        * {
-            margin: 0;
-            padding: 0;
-        }
-
-        body {
-            font-family: 'Sour Gummy', sans-serif;
-            font-size: 20px;
-            background-color: rgb(248, 241, 148);
-            color: rgb(65, 66, 15);
-        }
-
-        header {
-            display: flexbox;
-            align-items: center;
-            justify-content: center;
-            background-color: rgb(247, 211, 111);
-            height: 90px;
-        }
-
-        nav {
-            display: flex;
-            align-items: center;
-            justify-content: space-around;
-            margin-bottom: 10%;
-        }
-
-        .left {
-            font-size: 55px;
-            color: rgb(65, 44, 6);
-        }
-
-        nav ul {
-            display: flex;
-            justify-content: center;
-        }
-
-        nav ul li {
-            list-style: none;
-            margin: 0 25px;
-        }
-
-        .firstSection {
-            display: flex;
-            justify-content: space-between;
-            margin: 10px 70px;
-        }
-
-        .home {
-            font-size: 5rem;
-            margin: 0px;
-            padding: 0px;
-            color: rgb(75, 77, 71);
-        }
-
-        #name {
-            color: rgba(233, 43, 185, 0.774);
-        }
-
-        .hobbie {
-            font-weight: 200;
-        }
-
-        .myPic {
-            height: 600px;
-        }
-
-        .leftSection ul {
-            font-size: larger;
-        }
-
-        .img {
-            height: 50px;
-            margin: 0px;
-            display: flexbox;
-            justify-content: center;
-        }
-
-        footer {
-            margin: 20px 10px;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
     <header>
         <nav>
             <div class="left">
-                My Portfolio Website
+                <b>Portfolio</b>
             </div>
             <div class="right">
                 <ul id="context">
@@ -181,22 +97,29 @@
                         <div class="headSection">
                             <h1><u>Contact Me</u></h1>
                         </div>
-                        <img src="https://cdn.uconnectlabs.com/wp-content/uploads/sites/46/2022/08/Linkedin-Logo-e1660320077673.png"
-                            alt="Linkedin" class="img">
-                            <br>
-                        <img src="https://e7.pngegg.com/pngimages/914/522/png-clipart-gmail-icon-gmail-email-logo-g-suite-google-gmail-angle-text-thumbnail.png"
-                            alt="gmail" class="img">
-                    </ul>
                 </div>
             </div>
             <div class="rightSection">
-                <img id="myPic" src="Myimage.png">
+                <img id="myPic" src="https://media.licdn.com/dms/image/v2/D4E03AQGhTZ9Yj7VH9w/profile-displayphoto-shrink_800_800/B4EZSW3OG9HAAc-/0/1737697847772?e=1750896000&v=beta&t=2gR3B6i-yySbkOnAu_UnFI-Tni6zegGdP8_0NoS1yGA">
             </div>
+        </section>
+        <!-- Contact Section -->
+        <section>
+            <form action="">
+                <label for="name">Enter Name :</label>
+                <input type="text" placeholder="Enter name here" required>
+                <br>
+                <label for="email">Enter Email :</label>
+                <input type="email" placeholder="Enter email here" required>
+                <button type="submit">Submit</button>
+
+            </form>
         </section>
     </main>
     <footer>
         <br>
         <br>
+        <hr>
         <h3>Discriptions :</h3>
         <p>Sorry for the inconvenience</p>
         <p>It has only front-end(UI).So Functionality will not work.</p>
